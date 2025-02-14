@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Desarrollo web - JavaScript</title>
+    <link href="javascript.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">UNIAGUSTINIANO DEVOPS</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="HTML.html">HTML</a></li>
+                <li><a href="CSS.html">CSS</a></li>
+                <li><a href="post.html">POST</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="intro-header" style="background-image: url('JavaScript.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="page-heading">
+                    <h1>JavaScript</h1>
+                    <hr class="small">
+                    <span class="subheading">Lenguaje de programación esencial para el desarrollo web</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <h2>¿Qué es JavaScript?</h2>
+            <p>JavaScript es un lenguaje de programación de alto nivel, dinámico y basado en eventos, utilizado principalmente para crear interactividad en las páginas web. Es un lenguaje del lado del cliente que se ejecuta en los navegadores, permitiendo la manipulación del DOM, el manejo de eventos y la comunicación con servidores a través de AJAX o Fetch API. JavaScript es fundamental en el desarrollo web moderno y es compatible con frameworks como React, Angular y Vue.js.</p>
+
+            <h2>Características principales de JavaScript</h2>
+            <ul>
+                <li>Lenguaje interpretado y de tipado dinámico.</li>
+                <li>Basado en prototipos y orientado a objetos.</li>
+                <li>Compatible con todos los navegadores modernos.</li>
+                <li>Permite la manipulación del DOM.</li>
+                <li>Soporta asincronía mediante Promesas y async/await.</li>
+                <li>Interoperabilidad con otros lenguajes y APIs.</li>
+            </ul>
+
+            <h2>¿Cómo funciona JavaScript?</h2>
+            <p>JavaScript se ejecuta en el motor de JavaScript de un navegador web, interpretando y ejecutando el código de manera inmediata. Se puede incluir dentro de un documento HTML mediante la etiqueta <code>&lt;script&gt;</code> o como un archivo externo. JavaScript interactúa con el DOM para modificar la estructura de la página y responder a eventos de usuario.</p>
+
+            <h2>Manipulación del DOM con JavaScript</h2>
+            <p>El Document Object Model (DOM) es una representación estructurada de un documento HTML. JavaScript permite acceder, modificar y eliminar elementos dentro del DOM.</p>
+            <pre>
+                <code>
+// Seleccionar un elemento por su ID
+document.getElementById("miElemento").innerHTML = "Nuevo contenido";
+
+// Crear un nuevo elemento
+document.createElement("p");
+
+// Agregar un evento a un botón
+document.getElementById("miBoton").addEventListener("click", function() {
+    alert("¡Botón presionado!");
+});
+                </code>
+            </pre>
+
+            <h2>Programación Asíncrona en JavaScript</h2>
+            <p>JavaScript permite ejecutar código de manera asíncrona mediante Promesas y la sintaxis async/await, lo que facilita la comunicación con servidores sin bloquear la ejecución del código.</p>
+            <pre>
+                <code>
+async function obtenerDatos() {
+    let respuesta = await fetch("https://api.example.com/datos");
+    let datos = await respuesta.json();
+    console.log(datos);
+}
+obtenerDatos();
+                </code>
+            </pre>
+
+            <h2>Frameworks y bibliotecas de JavaScript</h2>
+            <ul>
+                <li><strong>React.js:</strong> Biblioteca para la creación de interfaces de usuario.</li>
+                <li><strong>Angular:</strong> Framework desarrollado por Google para aplicaciones web complejas.</li>
+                <li><strong>Vue.js:</strong> Framework progresivo para el desarrollo de interfaces interactivas.</li>
+                <li><strong>Node.js:</strong> Entorno de ejecución de JavaScript del lado del servidor.</li>
+            </ul>
+
+            <h2>Enlaces informativos y de consulta sobre JavaScript</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">MDN Web Docs - JavaScript</a></li>
+                <li><a href="https://www.w3schools.com/js/" target="_blank">W3Schools - JavaScript</a></li>
+                <li><a href="https://javascript.info/" target="_blank">JavaScript.info - Guía completa de JavaScript</a></li>
+                <li><a href="https://es6.io/" target="_blank">Curso de ES6</a></li>
+                <li><a href="https://nodejs.org/es/" target="_blank">Documentación oficial de Node.js</a></li>
+                <li><a href="https://caniuse.com/" target="_blank">Can I Use - Compatibilidad de funciones JavaScript</a></li>
+                <li><a href="https://www.ecma-international.org/publications-and-standards/" target="_blank">Especificación oficial de ECMAScript</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <p class="copyright text-muted">Copyright &copy; David Jiménez Sánchez / Universidad Uniagustiniana</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

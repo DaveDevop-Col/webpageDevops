@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Desarrollo web - CSS</title>
+    <link href="css.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">UNIAGUSTINIANO DEVOPS</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="HTML.html">HTML</a></li>
+                <li><a href="javascript.html">JAVASCRIPT</a></li>
+                <li><a href="post.html">POST</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <header class="intro-header" style="background-image: url('CSS.jpg')">
+        <div class="container">
+            <div class="row">
+                    <div class="page-heading">
+                        <h1>CSS</h1>
+                        <hr class="small">
+                        <span class="subheading">Conceptos clave para empezar</span>
+                    </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <h2>¿Qué es CSS?</h2>
+            <p>CSS (Cascading Style Sheets) es un lenguaje de diseño gráfico que se utiliza para definir la apariencia y el formato de un documento HTML. Permite separar el contenido de la presentación, lo que facilita la creación de sitios web atractivos y bien estructurados.</p>
+            
+            <h2>¿Cómo funciona CSS?</h2>
+            <p>CSS funciona mediante reglas que se aplican a los elementos HTML. Estas reglas están compuestas por selectores y declaraciones. Los selectores identifican los elementos a los que se aplicará el estilo, mientras que las declaraciones definen las propiedades y valores específicos, como colores, fuentes, márgenes y tamaños. CSS puede integrarse de tres maneras: en línea, interno (dentro de una etiqueta &lt;style&gt; en el HTML) o externo (en un archivo .css separado).</p>
+            
+            <h2>¿Qué es una etiqueta en CSS?</h2>
+            <p>En CSS, una etiqueta (o selector de etiqueta) se refiere a los elementos HTML a los que se aplican los estilos. Por ejemplo, si queremos que todos los párrafos tengan un color azul, podemos usar el selector <code>p</code> en CSS de la siguiente manera:</p>
+            <pre>
+            p {
+                color: blue;
+            }
+            </pre>
+            <p>Esto aplicará el color azul a todos los párrafos de la página.</p>
+            
+                <div>
+                    <p>Algunos ejemplos de propiedades en CSS son:</p>
+                    <ul>
+                        <li><strong>color</strong>: Define el color del texto. Ejemplo: <code>color: red;</code></li>
+                        <li><strong>background-color</strong>: Establece el color de fondo de un elemento. Ejemplo: <code>background-color: blue;</code></li>
+                        <li><strong>font-size</strong>: Especifica el tamaño del texto. Ejemplo: <code>font-size: 16px;</code></li>
+                        <li><strong>margin</strong>: Controla los márgenes exteriores de un elemento. Ejemplo: <code>margin: 10px;</code></li>
+                        <li><strong>padding</strong>: Define el espacio interno entre el contenido y el borde de un elemento. Ejemplo: <code>padding: 5px;</code></li>
+                        <li><strong>border</strong>: Establece el borde de un elemento. Ejemplo: <code>border: 2px solid black;</code></li>
+                        <li><strong>width</strong>: Define el ancho de un elemento. Ejemplo: <code>width: 100px;</code></li>
+                        <li><strong>height</strong>: Define la altura de un elemento. Ejemplo: <code>height: 50px;</code></li>
+                        <li><strong>display</strong>: Controla cómo se muestra un elemento. Ejemplo: <code>display: flex;</code></li>
+                        <li><strong>position</strong>: Define la posición de un elemento en la página. Ejemplo: <code>position: absolute;</code></li>
+                        <li><strong>text-align</strong>: Alinea el texto dentro de un elemento. Ejemplo: <code>text-align: center;</code></li>
+                        <li><strong>box-shadow</strong>: Agrega sombra a un elemento. Ejemplo: <code>box-shadow: 5px 5px 10px gray;</code></li>
+                        <li><strong>opacity</strong>: Ajusta la transparencia de un elemento. Ejemplo: <code>opacity: 0.5;</code></li>
+                        <li><strong>flexbox</strong>: Un modelo para alinear elementos dentro de un contenedor flexible. Ejemplo: <code>display: flex; justify-content: center; align-items: center;</code></li>
+                    </ul>
+                </div>
+            
+
+                <div>
+                    <h2>¿Qué es un diseño responsive?</h2>
+                    <p>Un diseño responsive es una técnica de diseño web que permite que una página se adapte de manera automática y eficiente a diferentes tamaños de pantalla y dispositivos, como computadoras de escritorio, laptops, tablets y teléfonos móviles. Su objetivo es garantizar una experiencia de usuario óptima sin importar la resolución o el tipo de dispositivo utilizado.</p>
+                
+                    <h2>¿Cómo funciona el diseño responsive?</h2>
+                    <p>El diseño responsive se basa en el uso de hojas de estilo en cascada (CSS) y técnicas como:</p>
+                    <ul>
+                        <li><strong>Media Queries:</strong> Permiten aplicar estilos específicos dependiendo del tamaño de la pantalla del usuario.</li>
+                        <li><strong>Unidades flexibles:</strong> Uso de porcentajes (%), em, rem y vw/vh en lugar de unidades fijas como px, para que los elementos se adapten proporcionalmente.</li>
+                        <li><strong>Diseño fluido:</strong> Utilización de contenedores flexibles que se expanden o contraen en función del ancho del dispositivo.</li>
+                        <li><strong>Grid y Flexbox:</strong> Sistemas de diseño CSS modernos que facilitan la creación de estructuras flexibles y adaptables.</li>
+                        <li><strong>Imágenes y elementos multimedia adaptables:</strong> Uso de imágenes escalables y atributos como <code>max-width: 100%</code> para evitar que los elementos desborden el contenedor.</li>
+                    </ul>
+                
+                    <h2>¿Por qué es importante el diseño responsive?</h2>
+                    <p>El diseño responsive es crucial porque:</p>
+                    <ul>
+                        <li>Mejora la experiencia del usuario al permitir una navegación cómoda en cualquier dispositivo.</li>
+                        <li>Facilita el mantenimiento, ya que se utiliza un solo código para todos los dispositivos en lugar de desarrollar versiones separadas.</li>
+                        <li>Optimiza el posicionamiento en buscadores (SEO), ya que Google favorece los sitios web adaptativos en sus resultados de búsqueda.</li>
+                        <li>Reduce la tasa de rebote, ya que los usuarios pueden acceder al contenido sin dificultades de visualización o navegación.</li>
+                    </ul>
+                
+                    <h2>Ejemplo de CSS para diseño responsive</h2>
+                    <p>Un ejemplo básico de cómo aplicar diseño responsive con media queries:</p>
+                    <pre>
+                        <code>
+                            /* Diseño para pantallas grandes */
+                            body {
+                                font-size: 18px;
+                            }
+                
+                            /* Diseño para tablets y dispositivos medianos */
+                            @media (max-width: 768px) {
+                                body {
+                                    font-size: 16px;
+                                }
+                            }
+                
+                            /* Diseño para móviles */
+                            @media (max-width: 480px) {
+                                body {
+                                    font-size: 14px;
+                                }
+                            }
+                        </code>
+                    </pre>
+                </div>
+
+                <div>
+                    <h2>Enlaces informativos y de consulta</h2>
+                    <p>A continuación, encontrarás recursos útiles para aprender sobre CSS, diseño responsive y desarrollo web:</p>
+                    
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">MDN Web Docs - CSS</a>: Documentación oficial de Mozilla sobre CSS.</li>
+                        <li><a href="https://www.w3schools.com/css/" target="_blank">W3Schools - CSS</a>: Tutoriales y ejemplos de CSS.</li>
+                        <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a>: Artículos y técnicas avanzadas sobre CSS y diseño web.</li>
+                        <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>: Framework CSS para diseño responsive.</li>
+                        <li><a href="https://developer.mozilla.org/es/docs/Web/CSS/Media_Queries" target="_blank">MDN - Media Queries</a>: Guía sobre cómo usar media queries en CSS.</li>
+                        <li><a href="https://web.dev/responsive-web-design/" target="_blank">Web.dev - Diseño Web Responsive</a>: Guía de Google para crear sitios web adaptables.</li>
+                        <li><a href="https://caniuse.com/" target="_blank">Can I Use</a>: Herramienta para verificar compatibilidad de propiedades CSS en distintos navegadores.</li>
+                        <li><a href="https://codepen.io/" target="_blank">CodePen</a>: Plataforma para probar y compartir código HTML, CSS y JavaScript.</li>
+                        <li><a href="https://flexboxfroggy.com/" target="_blank">Flexbox Froggy</a>: Juego interactivo para aprender Flexbox.</li>
+                        <li><a href="https://gridbyexample.com/" target="_blank">Grid by Example</a>: Recursos para aprender CSS Grid Layout.</li>
+                    </ul>
+                </div>               
+                
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <p class="copyright text-muted">Copyright &copy; David Jiménez Sánchez / Universidad Uniagustiniana</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

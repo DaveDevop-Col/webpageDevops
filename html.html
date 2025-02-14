@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Desarrollo web - HTML</title>
+    <link href="html.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">UNIAGUSTINIANO DEVOPS</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="CSS.html">CSS</a></li>
+                <li><a href="javascript.html">JAVASCRIPT</a></li>
+                <li><a href="post.html">POST</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <header class="intro-header" style="background-image: url('HTML.jpg')">
+        <div class="container">
+            <div class="row">
+                    <div class="page-heading">
+                        <h1>HTML</h1>
+                        <hr class="small">
+                        <span class="subheading">Conceptos clave para empezar</span>
+                    </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+                <h2>¿Qué es HTML?</h2>
+                <p>HTML (HyperText Markup Language) es un lenguaje de marcado utilizado para la creación y estructuración de páginas web. Define la organización del contenido mediante etiquetas que indican elementos como encabezados, párrafos, listas, enlaces, imágenes y otros componentes multimedia. HTML permite que los navegadores interpreten y presenten la información de manera visual, facilitando la navegación y la interacción en la web. Su sintaxis está basada en etiquetas que delimitan el inicio y el fin de cada elemento, permitiendo estructurar la información de forma jerárquica y organizada. Además, HTML se complementa con tecnologías como CSS para el diseño y JavaScript para la interactividad, formando la base del desarrollo web moderno.</p>
+                <h2>¿Cómo funciona HTML?</h2>
+                <p>HTML funciona como un lenguaje de marcado que estructura el contenido de una página web mediante etiquetas. Estas etiquetas organizan elementos como texto, imágenes, enlaces y otros componentes, permitiendo que los navegadores los interpreten y muestren correctamente. HTML define la jerarquía y la disposición del contenido, facilitando la interacción con otros lenguajes como CSS para el diseño y JavaScript para la funcionalidad.</p>
+                <h2>¿Qué es una etiqueta?</h2>
+                <p>Una etiqueta en HTML es un elemento que se utiliza para definir y estructurar el contenido de una página web. Se escribe entre los símbolos < > y puede tener atributos que modifican su comportamiento o apariencia. Las etiquetas suelen tener una apertura (<etiqueta>) y un cierre (</etiqueta>), aunque algunas pueden ser auto-cerradas (<etiqueta />).</p>
+                <div>
+                    <p>Algunos ejemplos de etiquetas son:</p>
+                    <ul>
+                        <li>&lt;html&gt;. Comando que da inicio a la cadena de instrucciones que es el código HTML y que cierra con &lt;/html&gt; al final del documento de programación.</li>
+                        <li>&lt;head&gt;. Define la cabecera del documento HTML, que se vincula con el título de la ventana del navegador y contiene subelementos como &lt;title&gt; (título), &lt;link&gt; (para vincular a hojas de estilo o modelos estéticos), &lt;meta&gt; (para referir información sobre la autoría del código), etc.</li>
+                        <li>&lt;img&gt;. Hace referencia a imágenes y suele estar acompañado de la ruta en donde ésta se encuentra.</li>
+                        <li>&lt;a&gt;. Se usa para introducir hipervínculos tanto internos como externos, mediante el atributo href y la dirección URL adonde el hipervínculo conducirá.</li>
+                        <li>&lt;div&gt;. Se utiliza para introducir divisiones dentro de la página web.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>¿Qué es una Lista?</h2>
+                    <p>Una lista es un conjunto de elementos organizados de manera ordenada o desordenada en HTML.</p>
+                    <p>Características de las listas:</p>
+                    <ul>
+                        <li>Existen listas ordenadas (&lt;ol&gt;) y listas desordenadas (&lt;ul&gt;).</li>
+                        <li>Cada elemento de la lista se define con la etiqueta &lt;li&gt;.</li>
+                        <li>Las listas ordenadas muestran los elementos con números o letras.</li>
+                        <li>Las listas desordenadas muestran los elementos con viñetas o puntos.</li>
+                        <li>Las listas pueden anidarse dentro de otras listas.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>¿Qué es una tabla?</h2>
+                    <p>Una tabla en HTML es una estructura utilizada para organizar datos en filas y columnas, permitiendo presentar información de manera ordenada y fácilmente comprensible.</p>
+                    <p>Características de las tablas:</p>
+                    <ul>
+                        <li>Se definen con la etiqueta &lt;table&gt;.</li>
+                        <li>Las filas se crean con la etiqueta &lt;tr&gt;.</li>
+                        <li>Las columnas o celdas se definen con la etiqueta &lt;td&gt; para datos y &lt;th&gt; para encabezados.</li>
+                        <li>Se pueden agregar atributos como colspan y rowspan para combinar celdas.</li>
+                        <li>Permiten organizar información estructurada de manera clara y eficiente.</li>
+                        <li>Se pueden estilizar con CSS para mejorar su apariencia.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Enlaces informativos y de consulta sobre HTML</h2>
+                    <p>A continuación, encontrarás recursos útiles para aprender sobre HTML, etiquetas, semántica y mejores prácticas:</p>
+                    
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">MDN Web Docs - HTML</a>: Documentación oficial de Mozilla sobre HTML.</li>
+                        <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools - HTML</a>: Tutoriales interactivos sobre HTML.</li>
+                        <li><a href="https://htmlreference.io/" target="_blank">HTML Reference</a>: Referencia visual de etiquetas HTML.</li>
+                        <li><a href="https://www.freecodecamp.org/news/html-crash-course/" target="_blank">FreeCodeCamp - Curso rápido de HTML</a>: Guía introductoria sobre HTML.</li>
+                        <li><a href="https://web.dev/html-basics/" target="_blank">Web.dev - Fundamentos de HTML</a>: Guía de Google sobre HTML y accesibilidad.</li>
+                        <li><a href="https://developer.mozilla.org/es/docs/Learn/HTML/Forms" target="_blank">MDN - Formularios en HTML</a>: Explicación detallada sobre formularios y validaciones.</li>
+                        <li><a href="https://caniuse.com/" target="_blank">Can I Use</a>: Herramienta para verificar compatibilidad de etiquetas y atributos HTML.</li>
+                        <li><a href="https://validator.w3.org/" target="_blank">W3C Validator</a>: Validador oficial de código HTML.</li>
+                        <li><a href="https://codepen.io/" target="_blank">CodePen</a>: Plataforma para probar y compartir código HTML, CSS y JavaScript.</li>
+                        <li><a href="https://htmlcheatsheet.com/" target="_blank">HTML Cheat Sheet</a>: Resumen con ejemplos y sintaxis de HTML.</li>
+                    </ul>
+                </div>
+                
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                    <p class="copyright text-muted">Copyright &copy; David Jiménez Sánchez / Universidad Uniagustiniana</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
